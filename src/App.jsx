@@ -128,7 +128,6 @@ function App() {
       !selectedStudent ||
       !date
     ) {
-      setIsValid(false);
       return;
     }
     setIsValid(true);
@@ -196,7 +195,7 @@ function App() {
               onChange={(e) => setselectedLessonDate(e.value)}
               options={lessonDate}
               placeholder="Ders Saati Seçiniz"
-              className="w-full md:w-50rem mt-3"
+              className="w-full md:w-50rem mt-4"
             />
           </div>
           <div className="col-lg-3 col-xd-12 position-relative gap-5">
