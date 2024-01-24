@@ -121,6 +121,16 @@ function App() {
     console.log(course); // Bu kısmı dilediğiniz yerde kullanabilirsiniz
   }, []);
   const handleSubmit = () => {
+    if (
+      !konu ||
+      !selectedNodeKey ||
+      !selectedLessonDate ||
+      !selectedStudent ||
+      !date
+    ) {
+      setIsValid(false);
+      return;
+    }
     setIsValid(true);
     const yeniVeri = {
       konu,
