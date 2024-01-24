@@ -11,7 +11,7 @@ import "primereact/resources/primereact.min.css";
 
 function App() {
   const [course, setCourse] = useState([]);
-  const [isValid, setIsValid] = useState(true);
+  const [isValid, setIsValid] = useState(false);
   const [konu, setKonu] = useState("");
   const [selectedNodeKey, setSelectedNodeKey] = useState([]);
   const [selectedLessonDate, setselectedLessonDate] = useState("");
@@ -121,6 +121,7 @@ function App() {
     console.log(course); // Bu kısmı dilediğiniz yerde kullanabilirsiniz
   }, []);
   const handleSubmit = () => {
+    setIsValid(true);
     const yeniVeri = {
       konu,
       selectedNodeKey,
@@ -208,8 +209,11 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="container-source container" id="pdf-content">
-        <table id="myTable">
+      <div
+        className={`${isValid ? "container-source container" : "d-none"}`}
+        id="pdf-content"
+      >
+        <table id="myTable" className={`${isValid ? "" : "d-none"}`}>
           <thead>
             <tr>
               <th>Ögrenci</th>
@@ -232,11 +236,11 @@ function App() {
           </tbody>
         </table>{" "}
       </div>
-      <img
+      {/* <img
         className="bg"
         src="https://c.wallhere.com/photos/5c/d7/university_teachers_school_blackboard_physics_mathematics_students_desk-255309.jpg!d"
         alt=""
-      />
+      /> */}
     </>
   );
 }

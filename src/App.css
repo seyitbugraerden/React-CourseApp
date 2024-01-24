@@ -6,11 +6,23 @@
 .container-source table{width: 100%;}
 .container-source table tr th{width: 33px !important;}
 .container-source img{z-index: 99;}
-.d-none{display: none;}
-.bg{position: absolute;top: 0;left: 0;z-index: -999;filter: brightness(.3);width: 100vw;height: 100vh;}
-body{overflow: hidden !important;}
-@media(max-width:1400px){button{margin-top: 15px !important;}}
-@media(max-width:972px){.col-lg-3{display: flex;justify-content: center;margin-top: 15px;margin-bottom: 15px;flex-direction: column;}.container{padding-left: 20px;padding-right: 20px;}}
+.d-none{display: none !important;}
+/* .bg{position: absolute;top: 0;left: 0;z-index: -999;filter: brightness(.3);width: 100vw;height: 100%;} */
+body {
+  overflow-x: hidden !important;
+  background-image: url("https://c.wallhere.com/photos/5c/d7/university_teachers_school_blackboard_physics_mathematics_students_desk-255309.jpg!d");
+  background-size: cover;
+  padding-bottom: 60px;
+}body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3); /* Filtre rengini ve opaklığını ayarlayabilirsiniz */
+  z-index: -1;
+}
 
 th, td {
   padding: 10px; /* Hücre içi boşlukları ayarlayabilirsiniz */
@@ -20,4 +32,5 @@ th, td {
 
 tr:hover {
   background-color: #f5f5f5; /* Fare üzerine gelindiğinde arka plan rengini değiştirme */
-}
+}@media(max-width:1400px){button{margin-top: 15px !important;}}
+@media(max-width:972px){.col-lg-3{display: flex;justify-content: center;margin-top: 15px;margin-bottom: 15px;flex-direction: column;}.container{padding-left: 20px;padding-right: 20px;}}
