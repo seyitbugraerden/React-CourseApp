@@ -234,7 +234,7 @@ function App() {
           <tbody>
             {course.map((item, index) => (
               <tr key={index}>
-                <td>{item.selectedStudent}</td>
+                <td>{item.selectedStudent.join(" - ")}</td>
                 <td>{item.selectedNodeKey}</td>
                 <td>{item.konu}</td>
                 <td>
