@@ -9,7 +9,7 @@ import "../App.css";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "primereact/resources/primereact.min.css";
 
-function Course() {
+function Course({ setData }) {
   const [course, setCourse] = useState([]);
   const [isValid, setIsValid] = useState(false);
   const [konu, setKonu] = useState("");
@@ -17,7 +17,7 @@ function Course() {
   const [selectedLessonDate, setselectedLessonDate] = useState("");
   const [selectedStudent, setSelectedStudent] = useState([]);
   const [date, setDate] = useState(new Date());
-  const [students, setStudents] = useState([]);
+  const [students, setStudents] = useState(setData);
   const [lessonDate, setLessonDate] = useState([
     "09.00-9.40",
     "09.50-10.30",

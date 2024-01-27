@@ -12,7 +12,7 @@ function Classes({ onDataSelected }) {
         <div className="row justify-content-center">
           <div
             className="col-lg-3 col-md-6 col-sm-12"
-            onClick={() => handleClick("11EA")}
+            onClick={() => handleClick("onbirea")}
           >
             <div className="card">
               <div className="overlay"></div>
@@ -26,7 +26,7 @@ function Classes({ onDataSelected }) {
           </div>
           <div
             className="col-lg-3 col-md-6 col-sm-12"
-            onClick={() => handleClick("11SAYA")}
+            onClick={() => handleClick("onbirsaya")}
           >
             <div className="card">
               <div className="overlay"></div>
@@ -40,7 +40,7 @@ function Classes({ onDataSelected }) {
           </div>
           <div
             className="col-lg-3 col-md-6 col-sm-12"
-            onClick={() => handleClick("11SAYB")}
+            onClick={() => handleClick("onbirsayb")}
           >
             <div className="card">
               <div className="overlay"></div>
@@ -56,7 +56,7 @@ function Classes({ onDataSelected }) {
         <div className="row justify-content-center">
           <div
             className="col-lg-3 col-md-6 col-sm-12"
-            onClick={() => handleClick("12EA")}
+            onClick={() => handleClick("onikiea")}
           >
             <div className="card">
               <div className="overlay"></div>
@@ -68,7 +68,10 @@ function Classes({ onDataSelected }) {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-12">
+          <div
+            className="col-lg-3 col-md-6 col-sm-12"
+            onClick={() => handleClick("onikisaya")}
+          >
             <div className="card">
               <div className="overlay"></div>
               <div className="content">
@@ -79,7 +82,10 @@ function Classes({ onDataSelected }) {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-12">
+          <div
+            className="col-lg-3 col-md-6 col-sm-12"
+            onClick={() => handleClick("onikisayb")}
+          >
             <div className="card">
               <div className="overlay"></div>
               <div className="content">
@@ -92,7 +98,10 @@ function Classes({ onDataSelected }) {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-lg-3 col-md-6 col-sm-12">
+          <div
+            className="col-lg-3 col-md-6 col-sm-12"
+            onClick={() => handleClick("msaya")}
+          >
             <div className="card">
               <div className="overlay"></div>
               <div className="content">
@@ -103,7 +112,10 @@ function Classes({ onDataSelected }) {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-12">
+          <div
+            className="col-lg-3 col-md-6 col-sm-12"
+            onClick={() => handleClick("msayb")}
+          >
             <div className="card">
               <div className="overlay"></div>
               <div className="content">
@@ -114,7 +126,10 @@ function Classes({ onDataSelected }) {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-12">
+          <div
+            className="col-lg-3 col-md-6 col-sm-12"
+            onClick={() => handleClick("meaa")}
+          >
             <div className="card">
               <div className="overlay"></div>
               <div className="content">
@@ -125,7 +140,10 @@ function Classes({ onDataSelected }) {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-12">
+          <div
+            className="col-lg-3 col-md-6 col-sm-12"
+            onClick={() => handleClick("meaa")}
+          >
             <div className="card">
               <div className="overlay"></div>
               <div className="content">
