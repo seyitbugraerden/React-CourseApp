@@ -6,7 +6,7 @@ import Classes from "./components/Classes";
 function App() {
   const [isTurned, setIsTurned] = useState(true);
   const [loading, setLoading] = useState(false);
-  const [classStudent, setClassStudent] = useState(onbirea);
+  const [selectedData, setSelectedData] = useState([]);
 
   const onbirea = [
     "OZAN ATA DURAK",
@@ -138,8 +138,10 @@ function App() {
     setTimeout(() => {
       setLoading(false);
       setIsTurned(false);
+      setSelectedData(data);
     }, 1000);
   };
+
   return (
     <>
       {loading ? (
@@ -147,7 +149,7 @@ function App() {
       ) : isTurned ? (
         <Classes onDataSelected={handleDataSelected} />
       ) : (
-        <Course setData={classStudent} />
+        <Course setData={selectedData} />
       )}
     </>
   );
