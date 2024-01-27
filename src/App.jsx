@@ -6,6 +6,7 @@ import Classes from "./components/Classes";
 function App() {
   const [isTurned, setIsTurned] = useState(true);
   const [loading, setLoading] = useState(false);
+  const [selectedData, setSelectedData] = useState("");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -15,8 +16,20 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleDataSelected = (data) => {
+    setSelectedData(data);
+    console.log(data);
+  };
   return (
-    <>{loading ? <ProgressSpinner /> : isTurned ? <Classes /> : <Course />}</>
+    <>
+      {loading ? (
+        <ProgressSpinner />
+      ) : isTurned ? (
+        <Classes onDataSelected={handleDataSelected} />
+      ) : (
+        <Course />
+      )}
+    </>
   );
 }
 
