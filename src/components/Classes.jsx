@@ -142,7 +142,7 @@ function Classes({ onDataSelected }) {
           </div>
           <div
             className="col-lg-3 col-md-6 col-sm-12"
-            onClick={() => handleClick("meaa")}
+            onClick={() => handleClick("meab")}
           >
             <div className="card">
               <div className="overlay"></div>

@@ -138,7 +138,6 @@ function App() {
     setTimeout(() => {
       setLoading(false);
       setIsTurned(false);
-      setSelectedData(data);
     }, 1000);
   };
 

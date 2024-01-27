@@ -17,7 +17,7 @@ function Course({ setData }) {
   const [selectedLessonDate, setselectedLessonDate] = useState("");
   const [selectedStudent, setSelectedStudent] = useState([]);
   const [date, setDate] = useState(new Date());
-  const [students, setStudents] = useState(setData);
+  const [students, setStudents] = useState([]);
   const [lessonDate, setLessonDate] = useState([
     "09.00-9.40",
     "09.50-10.30",
@@ -191,6 +191,7 @@ function Course({ setData }) {
       jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
     });
   };
+
   return (
     <>
       <h2 className="text-center text-light py-5 fw-bold text-uppercase">
