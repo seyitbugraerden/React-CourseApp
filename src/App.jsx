@@ -18,14 +18,21 @@ function App() {
   const [selectedStudent, setSelectedStudent] = useState([]);
   const [date, setDate] = useState(new Date());
   const [students, setStudents] = useState([
-    "Buğra Erden",
-    "İrem Erden",
-    "Sevde Erden",
-    "Lorem",
-    "Lorem2",
-    "Lorem3",
-    "Lorem4",
-    "Lorem5",
+    "MUHAMMED SALİH DURGUT",
+    "EFE SARI",
+    "SALİH EMİN ÜNAL",
+    "ÖMER FARUK AVAL",
+    "ZEHRA MEKİK",
+    "SUDENUR KAMACI",
+    "İREM YAĞMUR ACAR",
+    "SEDEN DOĞAN",
+    "MELİH ARIDURU",
+    "RAVZA NUR ALPAGUT",
+    "BEKİR KERİM EKTİ",
+    "BAYRAM BERAT AKAR",
+    "METİN KILIÇ",
+    "ŞÜHEDA ILICA",
+    "BETÜL İLKİM KARTAL",
   ]);
   const [lessonDate, setLessonDate] = useState([
     "09.00-9.40",
@@ -35,33 +42,15 @@ function App() {
   ]);
   const [nodes, setNodes] = useState([
     {
-      key: "Türkçe",
+      key: "Edebiyat - Türkçe",
       label: "Türkçe",
       icon: "pi pi-fw pi-inbox",
       children: [
         {
-          key: "Türkçe - Öğretmen 1",
-          label: "Öğretmen 1",
+          key: "Edebiyat - Türkçe - HİCRAN ÇEVİK",
+          label: "HİCRAN ÇEVİK",
           icon: "pi pi-fw pi-calendar-plus",
-          data: "Meeting",
-        },
-        {
-          key: "Türkçe - Öğretmen 2",
-          label: "Öğretmen 2",
-          icon: "pi pi-fw pi-calendar-plus",
-          data: "Meeting",
-        },
-        {
-          key: "Türkçe - Öğretmen 3",
-          label: "Öğretmen 3",
-          icon: "pi pi-fw pi-calendar-plus",
-          data: "Meeting",
-        },
-        {
-          key: "Türkçe - Öğretmen 4",
-          label: "Öğretmen 4",
-          icon: "pi pi-fw pi-calendar-plus",
-          data: "Meeting",
+          data: "HİCRAN ÇEVİK",
         },
       ],
     },
@@ -71,48 +60,113 @@ function App() {
       icon: "pi pi-fw pi-calendar",
       children: [
         {
-          key: "Matematik - Öğretmen 1",
-          label: "Öğretmen 1",
+          key: "Matematik - RAMAZAN KILIÇ",
+          label: "RAMAZAN KILIÇ",
           icon: "pi pi-fw pi-calendar-plus",
-          data: "Öğretmen 1",
+          data: "RAMAZAN KILIÇ",
         },
         {
-          key: "Matematik - Öğretmen 2",
-          label: "Öğretmen 2",
+          key: "Matematik - ALİ İHSAN ÖZKAN",
+          label: "ALİ İHSAN ÖZKAN",
           icon: "pi pi-fw pi-calendar-plus",
-          data: "Öğretmen 2",
+          data: "ALİ İHSAN ÖZKAN",
         },
         {
-          key: "Matematik - Öğretmen 3",
+          key: "AHMET ÖZDEMİR",
           label: "Öğretmen 3",
           icon: "pi pi-fw pi-calendar-plus",
-          data: "Öğretmen 3",
+          data: "AHMET ÖZDEMİR",
         },
       ],
     },
     {
-      key: "2",
-      label: "Fizik",
-      data: "Fizik",
+      key: "3",
+      label: "Geometri",
+      data: "Geometri",
       icon: "pi pi-fw pi-star-fill",
       children: [
         {
-          key: "Fizik - Öğretmen 1",
-          label: "Öğretmen 1",
+          key: "Geometri - HÜLYA SAYKAL",
+          label: "HÜLYA SAYKAL",
           icon: "pi pi-fw pi-calendar-plus",
-          data: "Öğretmen 1",
+          data: "HÜLYA SAYKAL",
+        },
+      ],
+    },
+    {
+      key: "4",
+      label: "Fizik",
+      icon: "pi pi-fw pi-calendar",
+      children: [
+        {
+          key: "Fizik - MUSTAFA ERDEN",
+          label: "MUSTAFA ERDEN",
+          icon: "pi pi-fw pi-calendar-plus",
+          data: "MUSTAFA ERDEN",
         },
         {
-          key: "Fizik - Öğretmen 2",
-          label: "Öğretmen 2",
+          key: "Fizik - FATMA DOĞAN",
+          label: "FATMA DOĞAN",
           icon: "pi pi-fw pi-calendar-plus",
-          data: "Öğretmen 2",
+          data: "FATMA DOĞAN",
+        },
+      ],
+    },
+    {
+      key: "5",
+      label: "Kimya",
+      icon: "pi pi-fw pi-calendar",
+      children: [
+        {
+          key: "Kimya - KORAY SÜRÜCÜOĞLU",
+          label: "KORAY SÜRÜCÜOĞLU",
+          icon: "pi pi-fw pi-calendar-plus",
+          data: "KORAY SÜRÜCÜOĞLU",
         },
         {
-          key: "Fizik - Öğretmen 3",
-          label: "Öğretmen 3",
+          key: "Kimya - ELİF ALTUNAY",
+          label: "ELİF ALTUNAY",
           icon: "pi pi-fw pi-calendar-plus",
-          data: "Öğretmen 3",
+          data: "ELİF ALTUNAY",
+        },
+      ],
+    },
+    {
+      key: "6",
+      label: "Biyoloji",
+      icon: "pi pi-fw pi-calendar",
+      children: [
+        {
+          key: "Biyoloji - DAMLA BAYEZİT",
+          label: "DAMLA BAYEZİT",
+          icon: "pi pi-fw pi-calendar-plus",
+          data: "DAMLA BAYEZİT",
+        },
+      ],
+    },
+    {
+      key: "7",
+      label: "Tarih",
+      icon: "pi pi-fw pi-calendar",
+      children: [
+        {
+          key: "Tarih - KENAN İNAN",
+          label: "KENAN İNAN",
+          icon: "pi pi-fw pi-calendar-plus",
+          data: "KENAN İNAN",
+        },
+      ],
+    },
+    {
+      key: "8",
+      label: "Coğrafya",
+      icon: "pi pi-fw pi-calendar",
+      children: [
+        {
+          key: "Coğrafya - RIZA GÖKÇE",
+          label: "RIZA GÖKÇE",
+          icon: "pi pi-fw pi-calendar-plus",
+          data: "RIZA GÖKÇE",
         },
       ],
     },
