@@ -17,23 +17,7 @@ function Course() {
   const [selectedLessonDate, setselectedLessonDate] = useState("");
   const [selectedStudent, setSelectedStudent] = useState([]);
   const [date, setDate] = useState(new Date());
-  const [students, setStudents] = useState([
-    "MUHAMMED SALİH DURGUT",
-    "EFE SARI",
-    "SALİH EMİN ÜNAL",
-    "ÖMER FARUK AVAL",
-    "ZEHRA MEKİK",
-    "SUDENUR KAMACI",
-    "İREM YAĞMUR ACAR",
-    "SEDEN DOĞAN",
-    "MELİH ARIDURU",
-    "RAVZA NUR ALPAGUT",
-    "BEKİR KERİM EKTİ",
-    "BAYRAM BERAT AKAR",
-    "METİN KILIÇ",
-    "ŞÜHEDA ILICA",
-    "BETÜL İLKİM KARTAL",
-  ]);
+  const [students, setStudents] = useState([]);
   const [lessonDate, setLessonDate] = useState([
     "09.00-9.40",
     "09.50-10.30",

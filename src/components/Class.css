@@ -1,0 +1,73 @@
+.pt-100{padding-top: 120px;}
+.card {
+	position: relative;
+
+	height: 170px;
+	background: url("https://img.freepik.com/free-photo/school-classroom-anime-style_23-2151125147.jpg?t=st=1706370798~exp=1706374398~hmac=60b01345cd8cbb2690eced2279621ad97a96dd6ceb5a7e6ebd87c7f592b061b7&w=1380"),
+		#ffffff;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 25px;
+	margin: 10px;
+	transition: 0.25s ease-in;
+}
+
+.card .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 170px;
+	background: linear-gradient(
+		120.55deg,
+		rgba(39, 39, 39, 0.38) 0%,
+		rgba(39, 39, 39, 0.2394) 100%
+	);
+	border-radius: 25px;
+}
+
+.card .content {
+	position: absolute;
+	bottom: 10px;
+	left: 25px;
+}
+
+.card .content h4 {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #f2f2f2;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+.card .content h6 {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color: #f2f2f2;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+.card .fav {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	cursor: pointer;
+}
+
+.card .fav i {
+	color: white;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+.card:hover {
+	background-position: top;
+}
