@@ -1,5 +1,5 @@
 import { MultiSelect } from "primereact/multiselect";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Calendar } from "primereact/calendar";
 import { TreeSelect } from "primereact/treeselect";
 import { Button } from "primereact/button";
@@ -201,7 +201,7 @@ function App() {
 
     html2pdf(pdfContent, {
       margin: 10,
-      filename: "kurs_tablosu.pdf",
+      filename: "course_schedule.pdf",
       image: { type: "jpeg", quality: 0.98 },
       html2canvas: { scale: 2 },
       jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
