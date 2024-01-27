@@ -171,9 +171,6 @@ function App() {
       ],
     },
   ]);
-  useEffect(() => {
-    console.log(course); // Bu kısmı dilediğiniz yerde kullanabilirsiniz
-  }, []);
   const handleSubmit = () => {
     if (
       !konu ||
@@ -204,7 +201,7 @@ function App() {
 
     html2pdf(pdfContent, {
       margin: 10,
-      filename: "course_schedule.pdf",
+      filename: "kurs_tablosu.pdf",
       image: { type: "jpeg", quality: 0.98 },
       html2canvas: { scale: 2 },
       jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
