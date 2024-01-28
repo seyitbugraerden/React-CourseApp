@@ -139,6 +139,9 @@ function App() {
       setLoading(false);
       setIsTurned(false);
     }, 1000);
+    if (data === "meab") {
+      setSelectedData(meab);
+    }
   };
 
   return (

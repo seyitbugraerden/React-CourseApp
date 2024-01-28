@@ -17,7 +17,7 @@ function Course({ setData }) {
   const [selectedLessonDate, setselectedLessonDate] = useState("");
   const [selectedStudent, setSelectedStudent] = useState([]);
   const [date, setDate] = useState(new Date());
-  const [students, setStudents] = useState([]);
+  const [students, setStudents] = useState(setData);
   const [lessonDate, setLessonDate] = useState([
     "09.00-9.40",
     "09.50-10.30",
