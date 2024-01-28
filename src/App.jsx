@@ -138,9 +138,36 @@ function App() {
     setTimeout(() => {
       setLoading(false);
       setIsTurned(false);
-    }, 1000);
+    }, 500);
     if (data === "meab") {
       setSelectedData(meab);
+    }
+    if (data === "msayb") {
+      setSelectedData(msayb);
+    }
+    if (data === "meaa") {
+      setSelectedData(meaa);
+    }
+    if (data === "msaya") {
+      setSelectedData(msaya);
+    }
+    if (data === "onikisayb") {
+      setSelectedData(onikisayb);
+    }
+    if (data === "onikisaya") {
+      setSelectedData(onikisaya);
+    }
+    if (data === "onikiea") {
+      setSelectedData(onikiea);
+    }
+    if (data === "onbirsayb") {
+      setSelectedData(onbirsayb);
+    }
+    if (data === "onbirsaya") {
+      setSelectedData(onbirsaya);
+    }
+    if (data === "onbirea") {
+      setSelectedData(onbirea);
     }
   };
 
