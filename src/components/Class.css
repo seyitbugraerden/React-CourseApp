@@ -26,7 +26,6 @@
 		rgba(39, 39, 39, .5) 100%
 	);
 	border-radius: 25px;
-    width: 300px;
 }
 
 .card .content {
@@ -77,3 +76,5 @@
 .card:hover {
 	background-position: top;
 }
+@media(min-width:762px){.card .overlay{
+    width: 300px;}}
