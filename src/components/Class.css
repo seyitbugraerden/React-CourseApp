@@ -11,7 +11,6 @@
 	border-radius: 25px;
 	margin: 10px;
 	transition: 0.25s ease-in;
-    min-width: 300px !important;
 }
 
 .card .overlay {
@@ -76,5 +75,9 @@
 .card:hover {
 	background-position: top;
 }
-@media(min-width:762px){.card .overlay{
+@media(min-width:762px){
+	.card{
+		min-width: 300px !important;
+	}
+	.card .overlay{
     width: 300px;}}
