@@ -19,10 +19,13 @@ function Course({ setData }) {
   const [date, setDate] = useState(new Date());
   const [students, setStudents] = useState(setData);
   const [lessonDate, setLessonDate] = useState([
-    "09.00-9.40",
-    "09.50-10.30",
-    "10.40-11.20",
-    "11.30-12.10",
+    "13.50-14.30",
+    "14.40-15.20",
+    "15.30-16.10",
+    "16.30-17.10",
+    "17.20-18.00",
+    "18.10-18.50",
+    "19.00-19.40",
   ]);
   const [nodes, setNodes] = useState([
     {
